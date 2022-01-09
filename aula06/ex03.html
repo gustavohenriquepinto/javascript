@@ -22,15 +22,19 @@
     <p>Já me livrei da maldição</p>
     <script>
         // O valor recebido pelo prompt é sempre uma string, que pode ser alterada para outros tipos posteriormente.
-        var n1=  Number.parseInt(window.prompt('Digite o primeiro número.'))
-        var n2= Number.parseInt(window.prompt('Digite o segundo número.'))
+        var n1=  Number(window.prompt('Digite o primeiro número.'))
+        var n2= Number(window.prompt('Digite o segundo número.'))
         var n= n1+n2
-        window.alert('A soma é :' + n)
+        window.alert('A soma é: ' + n)
         /* 
         + pode servir tanto para adição quanto concatenação.
 
         number+number para adição
         string+string para concatenação
+
+        Number.parseInt() - Torna uma variável um número inteiro
+        Number.parseFloat() - Torna uma variável um número real
+        Number() - Torna uma variável um número a critério do JS
         */
     </script>
 </body>
