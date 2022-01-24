@@ -1,7 +1,4 @@
-var agora= new Date()
-
-var hora= agora.getHours
-
+var hora= new Date().getHours()
 console.log(`Agora são ${hora} horas`)
 
 if (hora>=18 || hora<6){
