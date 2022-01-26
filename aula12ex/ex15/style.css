@@ -7,9 +7,8 @@
     font: normal 16px Arial;
     text-align: center;
 }
-
 body{
-    background-color: aqua;
+    background: white;
 }
 header h1{
     color: white;
