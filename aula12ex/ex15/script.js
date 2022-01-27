@@ -1,23 +1,15 @@
 function carregar(){
+    var msg= document.getElementById('msg')
+    var hor= document.getElementById('hor')
+    var img= document.getElementById('img')
 
-var hora= new Date().getHours()
-var horario= document.getElementById('hor')
-var msg= document.getElementById('msg')
-var corpo= document.body
-
-if(hora<6){
-    horario.innerText= 'Está de madrugada!'
-    corpo.style.backgroud= 'black'
-}else if(hora<12){
-    horario.innerText= 'Está de manhã!'
-    corpo.style.backgroud= 'blue'
-}else if(hora<18){
-    horario.innerText= 'Está de tarde!'
-    corpo.style.background= 'orange'
-}else{
-    horario.innerText= 'Está de noite!'
-    corpo.style.backgroud= 'gray'
-}
-
-msg.innerText= `Agora são ${hora} horas.`
+    var hora= new Date().getHours
+    
+    if(hora<12){
+        img.src= 'manha.jpg'
+    }else if(hora<18){
+        img.src= 'tarde.jpg'
+    }else{
+        img.src= 'noite.jpg'
+    }
 }
