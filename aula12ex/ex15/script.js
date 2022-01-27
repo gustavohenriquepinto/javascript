@@ -1,7 +1,8 @@
+function carregar(){
+
 var hora= new Date().getHours()
-var min= new Date().getMinutes()
 var horario= document.getElementById('hor')
-var h= document.getElementById('h')
+var msg= document.getElementById('msg')
 var corpo= document.body
 
 if(hora<6){
@@ -18,4 +19,5 @@ if(hora<6){
     corpo.style.backgroud= 'gray'
 }
 
-h.innerText= `Agora são ${hora}:${min}.
+msg.innerText= `Agora são ${hora} horas.`
+}
